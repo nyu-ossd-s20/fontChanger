@@ -1,6 +1,6 @@
 {
 
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Font Changer",
   "version": "1.0",
 
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": [""]
+      "js": ["content_scripts/change.js"]
     }
   ],
 
