@@ -1,1 +1,3 @@
-document.body.style.fontFamily = "fantasy";
+browser.runtime.onMessage.addListener((message) => {
+    document.body.style.fontFamily = message.command;
+});
