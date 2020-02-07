@@ -7,7 +7,6 @@ function updateFont(tabs){
     font = list.options[list.selectedIndex].value;
     browser.tabs.query({active: true, currentWindow: true})
         .then(change)
-
   }
 
   function change(tabs){
