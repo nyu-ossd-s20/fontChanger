@@ -4,10 +4,10 @@
   "name": "Font Changer",
   "version": "1.0",
 
-  "description": "Adds a browser extension to the toolbar that allows the user the change the font on a website.",
+  "description": "Change the font on a website.",
   "homepage_url": "https://github.com/nyu-ossd-s20/fontChanger",
   "icons": {
-    "48": "icons/"
+    "32": "icons/favicon-32x32.png"
   },
 
   "content_scripts": [
@@ -25,15 +25,13 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/",
+    "default_icon": "icons/favicon-32x32.png",
     "default_title": "Font Changer",
     "default_popup": "popup/chooseFont.html"
   },
 
   "web_accessible_resources": [
-    "fonts/",
-    "fonts/",
-    "fonts/"
+    "fonts/*"
   ]
 
 }
