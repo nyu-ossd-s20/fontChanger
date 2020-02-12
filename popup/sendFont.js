@@ -2,9 +2,16 @@ function updateFont(tabs) {
   const form = document.getElementById('font');
   form.addEventListener('submit', onSubmit);
   const list = document.getElementById("dropdown");
+  document.getElementById("reset").addEventListener('click', onClick);
   let font;
   function onSubmit(tabs) {
     font = list.options[list.selectedIndex].value;
+    browser.tabs.query({active: true, currentWindow: true})
+        .then(change)
+  }
+  
+  function onReset(tabs) {
+    font = "inherit";
     browser.tabs.query({active: true, currentWindow: true})
         .then(change)
   }
